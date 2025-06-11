@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>House of Purifier</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        
+        
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+        <!-- Navbar -->
+        <script>
+            fetch('./navbar/navbar.html') 
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('navbarContainer').innerHTML = data;
+                });
+        </script>
+            <div id="navbarContainer"></div>
+        <!-- Navbar -->
+
+            <!-- Header Start -->
+            <div class="container-fluid bg-breadcrumb">
+                <div class="container text-center py-5" style="max-width: 900px;">
+                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our News & Blog</h4>
+                    <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active text-primary">News & Blog</li>
+                    </ol>    
+                </div>
+            </div>
+            <!-- Header End -->
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text btn border p-3"><i class="fa fa-search text-white"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+        <!-- Blog Start -->
+        <!-- <div class="container-fluid blog py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-uppercase text-primary">Our Blog</h4>
+                    <h1 class="display-3 text-capitalize mb-3">Latest Blog & News</h1>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog1.avif" class="img-fluid rounded-top w-100" alt="" style="max-height: 100%;">
+                                <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Jan 12 2025</div>
+                            </div>
+                            <div class="blog-content rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-3">The Importance of Access to Pure Water for Human Health and Wellbeing</a>
+                                <p>Water is essential for survival and is an important part of our everyday life. It is essential for maintaining health and well-being, and access to clean, pure water is essential for both. The importance of access to pure water for human health and well-being cannot be overstated. Water is an essential part of our diet, helps to regulate our body temperature, and is vital for human survival. Without access to pure, safe drinking water, people are at risk of developing serious health problems, and in some cases, death.</p>
+                                <a href="#" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog-2.jpg" class="img-fluid rounded-top w-100" alt="" style="max-height: 100%;">
+                                <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Jan 12 2025</div>
+                            </div>
+                            <div class="blog-content rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-3">The Role of Clean Water in Supporting a Healthy Lifestyle</a>
+                                <p>Clean water is a cornerstone of good health and plays a vital role in our everyday lives. From hydration to maintaining bodily functions, access to pure, safe water is critical for overall well-being. Clean water not only helps regulate body temperature but also supports digestion, detoxification, and essential bodily processes. Without reliable access to safe drinking water, communities face increased risks of diseases and long-term health complications. Prioritizing clean water is essential for fostering healthier lives and stronger communities.</p>
+                                <a href="#" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog3.avif" class="img-fluid rounded-top w-100" alt="" style="max-height: 100%;">
+                                <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Jan 12 2025</div>
+                            </div>
+                            <div class="blog-content rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-3">Under-the-counter RO Water Purifier – What Makes it so Convenient?</a>
+                                <p>The importance of RO Water Purifiers is well understood due to their ability to provide Pure Drinking Water that is free from bacteria, viruses, chemicals, and even dissolved impurities. The water supplied from municipal corporation travels through rusted old pipelines and is stored in dirty overhead tanks, increasing the chances of water contamination, which makes</p>
+                                <a href="#" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- code2 -->
+        <div class="container-fluid blog py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-uppercase text-primary">Our Blog</h4>
+                    <h1 class="display-3 text-capitalize mb-3">Latest Blog & News</h1>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog1.avif" class="img-fluid d-block w-100" alt="" style="height: 250px; object-fit: cover;">
+                                <!-- <div class="blog-date px-4 py-2 bg-transparent"><i class="fa fa-calendar-alt me-1"></i> Jan 12 2025</div> -->
+                                <div class="blog-date px-4 py-2 bg-transparent text-start hover:bg-secondary">
+                                    <i class="fa fa-calendar-alt me-1"></i> Jan 12 2025
+                                  </div>
+                            </div>
+                            <div class="blog-content rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-3">The Importance of Access to Pure Water for Human Health and Wellbeing</a>
+                                <p>Water is essential for survival and is an important part of our everyday life. It is essential for maintaining health and well-being, and access to clean, pure water is essential for both. The importance of access to pure water for human health and well-being cannot be overstated.</p>
+                                <a href="#" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog2.webp" class="img-fluid d-block w-100" alt="" style="height: 250px; object-fit: cover;">
+                                <div class="blog-date px-4 py-2 bg-transparent text-start hover:bg-secondary"><i class="fa fa-calendar-alt me-1 align"></i> Jan 12 2025</div>
+                            </div>
+                            <div class="blog-content rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-3">"How Peore Nanofiltration Ensures Pure Water Without Losing Essential Minerals"</a>
+                                <p>Peore's Nanofiltration technology revolutionizes water purification by providing safe, mineral-rich water. Unlike conventional RO systems, it removes harmful impurities while retaining essential micronutrients. The system is designed to adapt to various water.</p>
+                                <a href="#" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog3.avif" class="img-fluid d-block w-100" alt="" style="height: 250px; object-fit: cover;">
+                                <div class="blog-date px-4 py-2 bg-transparent text-start hover:bg-secondary"><i class="fa fa-calendar-alt me-1"></i> Jan 12 2025</div>
+                            </div>
+                            <div class="blog-content rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-3">Under-the-counter RO Water Purifier – What Makes it so Convenient?</a>
+                                <p>RO water purifiers use advanced filtration to remove impurities through a semi-permeable membrane, effectively eliminating harmful contaminants like lead, arsenic, fluoride, and nitrates for safe, clean water, ensuring better health and hydration.</p>
+                                <a href="#" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Blog End -->
+         <!-- socilal media logo  -->
+         <div class="sticky-container">
+            <ul class="sticky">
+                <li>
+                    <img src="./img/facebook.png" width="32" height="32">
+                    <p><a href="https://www.facebook.com/codexworld" target="_blank">Like Us on<br>Facebook</a></p>
+                </li>
+                <li>
+                    <img src="./img/gmail.webp" width="32" height="32">
+                    <p><a href="https://plus.google.com/codexworld" target="_blank">Search Us on<br>Google+</a></p>
+                </li>
+                <li>
+                    <img src="./img/insta.png" width="32" height="32" style="border-radius: 10px;">
+                    <p><a href="https://www.instagram.com/" target="_blank">Follow Us on<br>Instagram</a></p>
+                </li>
+                <li>
+                  <img src="./img/whatsaap (1).png" width="32" height="32" style="border-radius: 10px;">
+                  <p><a href="https://www.Whatsapp.com/" target="_blank">Message Us on<br>Whatsapp</a></p>
+              </li>
+              <li>
+                <img src="./img/call.png" width="32" height="32" style="border-radius: 10px;">
+                <p><a href="tel:+917020976697" target="_blank">Contact Us on<br>+917020976697</a></p>
+            </li>
+            </ul>
+          </div>
+        <!--social media logo -->
+        <!-- Footer Start -->
+        <script>
+            // Fetch and insert footer content
+            fetch('./includefooter/footer.html')
+                    .then(response => response.text())
+                    .then(data => {
+                            document.getElementById('footerContainer').innerHTML = data;
+                    });
+        </script>
+        <div id="footerContainer"></div> 
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-3">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                   <div class="col-lg-12 col-md-12 row-cols-sm-6 text-center mb-md-0">
+                        <span class="text-body justify-content-center"><a href="#" class=""><i class="fas fa-copyright text-light me-2"></i></a>All right reserved - Designed by  <a href="https://bhushanbarge.github.io/MyPortFolio/"> Bhushan Barge </a></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+ 
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>

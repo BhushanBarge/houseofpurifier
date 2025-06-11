@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+ <style>
+  /*** Service Start ***/
+.service-item {
+    position: relative;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+}
+
+.service-item::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background: var(--bs-primary);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.service-item:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.service-item:hover .service-content,
+.service-item:hover .service-btn {
+    position: relative;
+    z-index: 2;
+}
+
+.service-item .service-content a,
+.service-item .service-content p {
+    transition: 0.5s;
+}
+
+.service-item:hover .service-content a:hover {
+    color: var(--bs-secondary);
+}
+
+.service-item:hover .service-content p {
+    color: var(--bs-white);
+} 
+
+.service-item .service-btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bs-primary);
+    transition: 0.5s;
+}
+
+.service-item .service-btn i {
+    transition: 0.5s;
+}
+
+.service-item:hover .service-btn {
+    background: var(--bs-white);
+}
+
+.service-item:hover .service-btn i {
+    transform: rotate(360deg);
+    color: var(--bs-primary) !important;
+}
+/*** Service End ***/
+ </style>
+  <!-- Service Start -->
+  <div class="container-fluid service bg-light overflow-hidden py-5">
+    <div class="container py-3">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-uppercase text-primary">Our Service</h4>
+            <h1 class="display-3 text-capitalize mb-1">Ro installation Service</h1>
+        </div>
+<!-- content 3 -->
+<div class="container py-1">
+<!-- First Section: Image on the left, Text on the right -->
+<div class="row align-items-center mb-5 wow fadeInRight" data-wow-delay="0.2s">
+<div class="col-lg-4 mb-4 mb-lg-0">
+    <img src="./img/servicepage2.png" class="img-fluid rounded w-100" alt="Descriptive Alt Text" style="object-fit: cover;">
+</div>
+<div class="col-lg-8">
+    <h2 class="mb-3">Step 1: Installation</h2>
+    <p class="mb-4">
+        "Unbox the RO filter and check all components to ensure nothing is missing. Mount the filter securely under the sink or at a convenient location, ensuring it's easily accessible for future maintenance. Connect the inlet and outlet pipes carefully, following the instructions in the manual. Make sure the connections are tight and leak-free. Also, ensure the filter is positioned correctly, with enough space around it for proper airflow. Double-check all connections before moving on to the next step."
+    </p>
+</div>
+</div>
+
+<!-- Second Section: Text on the left, Image on the right -->
+<div class="row align-items-center wow fadeInLeft" data-wow-delay="0.2s">
+<div class="col-lg-4 order-lg-2 mb-4 mb-lg-0">
+    <img src="./img/installatonstep-2.jpg" class="img-fluid rounded w-100" alt="Descriptive Alt Text" style="object-fit: cover;">
+</div>
+<div class="col-lg-8 order-lg-1">
+    <h2 class="mb-3">Step 2: Testing and Calibration</h2>
+    <p class="mb-4">
+        "Once the installation is complete, switch on the water supply and check for any leaks around the filter, pipes, and connections. Allow the RO filter to run and flush for 10-15 minutes to remove any dust or debris from the system. After flushing, check the water output for any signs of impurities. Test the taste and clarity of the water to ensure the filter is working correctly. If everything is functioning properly, calibrate the filter settings (if necessary) and prepare it for regular use."
+    </p>
+</div>
+</div>
+</div>
+
+
+<!-- content 3 -->
+ <!-- content of RO -->
+    </div>
+</div>
+        
+  
